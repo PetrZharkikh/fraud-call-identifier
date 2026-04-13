@@ -1,0 +1,5 @@
+# Python 3.10+ (kairos-asr). Пример: python3 -m pip install -r requirements.txt
+# Apple Silicon: можно заменить [cpu] на [metal] — см. https://github.com/Alenkar/kairos-asr
+kairos-asr[cpu]==0.7.0
+numpy>=1.23.5
+tqdm>=4.65.0
