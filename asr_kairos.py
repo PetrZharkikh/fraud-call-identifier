@@ -1,5 +1,3 @@
-"""Русское ASR через kairos-asr (GigaAM-style RNN-T, ONNX). Нужен Python 3.10+ и ffmpeg в PATH."""
-
 from __future__ import annotations
 
 import sys
@@ -45,7 +43,6 @@ def transcribe_wav(
     force_download: bool = False,
     pause_threshold: float = 2.0,
 ) -> str:
-    """Путь к WAV/другому формату, который читает ffmpeg (см. документацию kairos-asr)."""
     asr = get_kairos(
         device=device,
         model_path=model_path,
